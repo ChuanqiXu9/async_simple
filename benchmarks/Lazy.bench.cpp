@@ -31,6 +31,10 @@ void async_simple_Lazy_collectAll(benchmark::State& state) {
     };
     for ([[maybe_unused]] const auto& _ : state)
         syncAwait(collectAllStarter());
+    for ([[maybe_unused]] const auto& _ : state)
+        syncAwait(collectAllStarter());
+    for ([[maybe_unused]] const auto& _ : state)
+        syncAwait(collectAllStarter());
 }
 
 void RescheduleLazy_chain(benchmark::State& state) {

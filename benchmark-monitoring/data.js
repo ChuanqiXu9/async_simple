@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646726292386,
+  "lastUpdate": 1646738461154,
   "repoUrl": "https://github.com/ChuanqiXu9/async_simple",
   "entries": {
     "C++ Benchmark": [
@@ -432,6 +432,66 @@ window.BENCHMARK_DATA = {
             "value": 11856852.222222196,
             "unit": "ns/iter",
             "extra": "iterations: 63\ncpu: 11854961.904761905 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yedeng.yd@linux.alibaba.com",
+            "name": "Chuanqi Xu",
+            "username": "ChuanqiXu9"
+          },
+          "committer": {
+            "email": "yedeng.yd@linux.alibaba.com",
+            "name": "Chuanqi Xu",
+            "username": "ChuanqiXu9"
+          },
+          "distinct": true,
+          "id": "b7ccb62ef0eec7d36c120bf29eb0da06ef15a070",
+          "message": "Add more benchmark",
+          "timestamp": "2022-03-08T19:18:14+08:00",
+          "tree_id": "9c9831e131052d2c946448a43b4364be2b86cedf",
+          "url": "https://github.com/ChuanqiXu9/async_simple/commit/b7ccb62ef0eec7d36c120bf29eb0da06ef15a070"
+        },
+        "date": 1646738460283,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "Future_chain",
+            "value": 32560234.45000011,
+            "unit": "ns/iter",
+            "extra": "iterations: 100\ncpu: 538447.0000000001 ns\nthreads: 1"
+          },
+          {
+            "name": "Future_collectAll",
+            "value": 61110574.69444445,
+            "unit": "ns/iter",
+            "extra": "iterations: 36\ncpu: 19151361.111111112 ns\nthreads: 1"
+          },
+          {
+            "name": "async_simple_Lazy_chain",
+            "value": 21023.633554217107,
+            "unit": "ns/iter",
+            "extra": "iterations: 33200\ncpu: 21020.786144578313 ns\nthreads: 1"
+          },
+          {
+            "name": "async_simple_Lazy_collectAll",
+            "value": 10307024.816901363,
+            "unit": "ns/iter",
+            "extra": "iterations: 71\ncpu: 10303349.295774654 ns\nthreads: 1"
+          },
+          {
+            "name": "RescheduleLazy_chain",
+            "value": 50332.547419315066,
+            "unit": "ns/iter",
+            "extra": "iterations: 48398\ncpu: 14718.314806396953 ns\nthreads: 1"
+          },
+          {
+            "name": "RescheduleLazy_collectAll",
+            "value": 30164464.790000096,
+            "unit": "ns/iter",
+            "extra": "iterations: 100\ncpu: 24326.999999999545 ns\nthreads: 1"
           }
         ]
       }

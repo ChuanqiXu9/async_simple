@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646720559534,
+  "lastUpdate": 1646720955657,
   "repoUrl": "https://github.com/ChuanqiXu9/async_simple",
   "entries": {
     "C++ Benchmark": [
@@ -72,6 +72,42 @@ window.BENCHMARK_DATA = {
             "value": 9928800.936507734,
             "unit": "ns/iter",
             "extra": "iterations: 63\ncpu: 9928480.952380953 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yedeng.yd@linux.alibaba.com",
+            "name": "Chuanqi Xu",
+            "username": "ChuanqiXu9"
+          },
+          "committer": {
+            "email": "yedeng.yd@linux.alibaba.com",
+            "name": "Chuanqi Xu",
+            "username": "ChuanqiXu9"
+          },
+          "distinct": true,
+          "id": "5608652b548c516187e16890a64d7d012f9da0c4",
+          "message": "Split Performance CI",
+          "timestamp": "2022-03-08T14:27:38+08:00",
+          "tree_id": "d5797cbdc583172505494db1c550327729cc9d47",
+          "url": "https://github.com/ChuanqiXu9/async_simple/commit/5608652b548c516187e16890a64d7d012f9da0c4"
+        },
+        "date": 1646720954529,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "async_simple_Lazy_chain",
+            "value": 23522.222802465687,
+            "unit": "ns/iter",
+            "extra": "iterations: 29681\ncpu: 23515.77777029076 ns\nthreads: 1"
+          },
+          {
+            "name": "async_simple_Lazy_collectAll",
+            "value": 9858666.492753489,
+            "unit": "ns/iter",
+            "extra": "iterations: 69\ncpu: 9853839.130434783 ns\nthreads: 1"
           }
         ]
       }

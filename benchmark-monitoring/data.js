@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1647327485612,
+  "lastUpdate": 1648606933264,
   "repoUrl": "https://github.com/ChuanqiXu9/async_simple",
   "entries": {
     "C++ Benchmark": [
@@ -720,6 +720,78 @@ window.BENCHMARK_DATA = {
             "value": 45785175.339286104,
             "unit": "ns/iter",
             "extra": "iterations: 56\ncpu: 12178966.071428576 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yedeng.yd@linux.alibaba.com",
+            "name": "Chuanqi Xu",
+            "username": "ChuanqiXu9"
+          },
+          "committer": {
+            "email": "yedeng.yd@linux.alibaba.com",
+            "name": "Chuanqi Xu",
+            "username": "ChuanqiXu9"
+          },
+          "distinct": true,
+          "id": "db0a3d5dcf348bde16d7dcbdb4ffe8be1ccf0fe1",
+          "message": "Enable to use coroutine components under std directly\n\nWe could use coroutine components under std directly by using\nexperimental ones in std namespace. So the code would be cleaner.",
+          "timestamp": "2022-03-30T10:20:03+08:00",
+          "tree_id": "a9ed60172ba644b2c801fcb8c3634477243ef879",
+          "url": "https://github.com/ChuanqiXu9/async_simple/commit/db0a3d5dcf348bde16d7dcbdb4ffe8be1ccf0fe1"
+        },
+        "date": 1648606932037,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "Future_chain",
+            "value": 23616.49510371863,
+            "unit": "ns/iter",
+            "extra": "iterations: 53510\ncpu: 15228.44701924874 ns\nthreads: 1"
+          },
+          {
+            "name": "Future_collectAll",
+            "value": 11843576.675324636,
+            "unit": "ns/iter",
+            "extra": "iterations: 77\ncpu: 10271585.714285716 ns\nthreads: 1"
+          },
+          {
+            "name": "async_simple_Lazy_chain",
+            "value": 17833.80127309445,
+            "unit": "ns/iter",
+            "extra": "iterations: 38646\ncpu: 17826.227811416447 ns\nthreads: 1"
+          },
+          {
+            "name": "async_simple_Lazy_collectAll",
+            "value": 7528461.225806447,
+            "unit": "ns/iter",
+            "extra": "iterations: 93\ncpu: 7527840.860215052 ns\nthreads: 1"
+          },
+          {
+            "name": "RescheduleLazy_chain",
+            "value": 46973.43029052414,
+            "unit": "ns/iter",
+            "extra": "iterations: 48946\ncpu: 14317.766518203733 ns\nthreads: 1"
+          },
+          {
+            "name": "RescheduleLazy_collectAll",
+            "value": 21272304.374000017,
+            "unit": "ns/iter",
+            "extra": "iterations: 1000\ncpu: 18369.000000000746 ns\nthreads: 1"
+          },
+          {
+            "name": "ThreadPool_noWorkSteal",
+            "value": 3933842910.00001,
+            "unit": "ns/iter",
+            "extra": "iterations: 1\ncpu: 185348100.00000057 ns\nthreads: 1"
+          },
+          {
+            "name": "ThreadPool_withWorkSteal",
+            "value": 688827471.7999991,
+            "unit": "ns/iter",
+            "extra": "iterations: 10\ncpu: 37810490.00000003 ns\nthreads: 1"
           }
         ]
       }

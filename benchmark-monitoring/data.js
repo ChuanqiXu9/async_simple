@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1655864583645,
+  "lastUpdate": 1658469391060,
   "repoUrl": "https://github.com/ChuanqiXu9/async_simple",
   "entries": {
     "C++ Benchmark": [
@@ -3621,6 +3621,102 @@ window.BENCHMARK_DATA = {
             "value": 77468162.85714431,
             "unit": "ns/iter",
             "extra": "iterations: 14\ncpu: 48489278.57142866 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "68680648+ChuanqiXu9@users.noreply.github.com",
+            "name": "Chuanqi Xu",
+            "username": "ChuanqiXu9"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ab0b9a18218136b0435a446794a1ae739924a74a",
+          "message": "Testing (#4)\n\n* Detect the presence of [[likely]] properly (#120)\r\n\r\n* Fix build on m1 mac clang-14 (#122)\r\n\r\n* fix typo (#124)\r\n\r\n* fix typo (#126)\r\n\r\nCo-authored-by: Devillove084 <devillove084@users.noreply.github.com>\r\nCo-authored-by: 大黄老鼠 <2931408816@qq.com>\r\nCo-authored-by: PikachuHy <pikachuhy@linux.alibaba.com>",
+          "timestamp": "2022-07-22T13:54:40+08:00",
+          "tree_id": "b857358d22b9920d0e94f2da3c0f5389f24cd52a",
+          "url": "https://github.com/ChuanqiXu9/async_simple/commit/ab0b9a18218136b0435a446794a1ae739924a74a"
+        },
+        "date": 1658469389206,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "Future_chain",
+            "value": 21096.780968898718,
+            "unit": "ns/iter",
+            "extra": "iterations: 43245\ncpu: 11911.920453231587 ns\nthreads: 1"
+          },
+          {
+            "name": "Future_collectAll",
+            "value": 17256155.30434788,
+            "unit": "ns/iter",
+            "extra": "iterations: 46\ncpu: 12678665.217391305 ns\nthreads: 1"
+          },
+          {
+            "name": "async_simple_Lazy_chain",
+            "value": 26751.853280227628,
+            "unit": "ns/iter",
+            "extra": "iterations: 26111\ncpu: 26746.04572785416 ns\nthreads: 1"
+          },
+          {
+            "name": "async_simple_Lazy_collectAll",
+            "value": 11976319.59322064,
+            "unit": "ns/iter",
+            "extra": "iterations: 59\ncpu: 11968196.610169496 ns\nthreads: 1"
+          },
+          {
+            "name": "RescheduleLazy_chain",
+            "value": 62016.12723473379,
+            "unit": "ns/iter",
+            "extra": "iterations: 43070\ncpu: 17363.03923844904 ns\nthreads: 1"
+          },
+          {
+            "name": "RescheduleLazy_collectAll",
+            "value": 31359128.31000013,
+            "unit": "ns/iter",
+            "extra": "iterations: 100\ncpu: 29994.999999995995 ns\nthreads: 1"
+          },
+          {
+            "name": "Uthread_switch",
+            "value": 103906198.57142675,
+            "unit": "ns/iter",
+            "extra": "iterations: 7\ncpu: 102970342.85714294 ns\nthreads: 1"
+          },
+          {
+            "name": "Uthread_async",
+            "value": 103926941.99999905,
+            "unit": "ns/iter",
+            "extra": "iterations: 7\ncpu: 103006457.14285712 ns\nthreads: 1"
+          },
+          {
+            "name": "Uthread_await",
+            "value": 103890212.42857309,
+            "unit": "ns/iter",
+            "extra": "iterations: 7\ncpu: 103610985.7142857 ns\nthreads: 1"
+          },
+          {
+            "name": "Uthread_collectAll",
+            "value": 13347280.803571442,
+            "unit": "ns/iter",
+            "extra": "iterations: 56\ncpu: 12875428.571428569 ns\nthreads: 1"
+          },
+          {
+            "name": "ThreadPool_noWorkSteal",
+            "value": 364133832.2499976,
+            "unit": "ns/iter",
+            "extra": "iterations: 4\ncpu: 186794049.99999982 ns\nthreads: 1"
+          },
+          {
+            "name": "ThreadPool_withWorkSteal",
+            "value": 82841764.61538532,
+            "unit": "ns/iter",
+            "extra": "iterations: 13\ncpu: 61828646.15384614 ns\nthreads: 1"
           }
         ]
       }

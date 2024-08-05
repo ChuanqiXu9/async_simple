@@ -23,6 +23,8 @@
 // There unhandled macro uses found in the body:
 //	'AS_UNLIKELY' defined in /home/chuanqi.xcq/async_simple/async_simple/CommonMacros.h:22:9
 //	'assert' defined in /usr/include/assert.h:50:10
+#include <cassert>
+#include "async_simple/CommonMacros.h"
 import async_simple;
 import std;
 namespace async_simple {

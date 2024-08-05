@@ -1,0 +1,12 @@
+modules:
+  - name: async_simple
+    path: async_simple/async_simple.cppm
+    headers: async_simple/**/*.h
+    excluded_headers:
+      - "**/test/**"
+mode: header-wrapper
+controlling_macro: ASYNC_SIMPLE_USE_MODULES
+is_std_module_available: false
+srcs_to_rewrite: async_simple/uthread/internal/thread.cc
+compilation_database: build/compile_commands.json
+std_module_path: async_simple/std.cppm

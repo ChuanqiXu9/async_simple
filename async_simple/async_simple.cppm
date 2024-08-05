@@ -16,6 +16,10 @@ module;
 #include <stdio.h>
 #include <climits>
 
+#ifdef __linux__
+#include <sched.h>
+#endif
+
 export module async_simple;
 import std;
 #define ASYNC_SIMPLE_USE_MODULES

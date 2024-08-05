@@ -20,12 +20,11 @@
  * Copyright (C) 2015 Cloudius Systems, Ltd.
  */
 
-#include <algorithm>
-#include <string>
-
-#include "async_simple/Common.h"
-#include "async_simple/uthread/internal/thread.h"
-
+// There unhandled macro uses found in the body:
+//	'AS_UNLIKELY' defined in /home/chuanqi.xcq/async_simple/async_simple/CommonMacros.h:22:9
+//	'assert' defined in /usr/include/assert.h:50:10
+import async_simple;
+import std;
 namespace async_simple {
 namespace uthread {
 namespace internal {

@@ -48,7 +48,7 @@ compilation_database: build/compile_commands.json
 std_module_path: async_simple/std.cppm
 ```
 
-Here we changed the implementation file `thread.cc` to use modules. If we still hope to keep the implementation to use headers (then the user of the codes won't be forced to use modules), we can't remove the line for `srcs_to_rewrite`.
+Here we changed the implementation file `thread.cc` to use modules. If we still hope to keep the implementation to use headers (then the user of the codes won't be forced to use modules), we can remove the line for `srcs_to_rewrite`.
 
 The change lives in  [Add config file](https://github.com/ChuanqiXu9/async_simple/commit/57a76e49bfdebc6892b211f80b6acc01fa6f4120).
 

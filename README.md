@@ -2,6 +2,12 @@ This branch is a step by step example to show how to use [clang-modules-converte
 
 The changes required are listed in the [git log history](https://github.com/ChuanqiXu9/async_simple/commits/HeaderWrapper/).
 
+### Step 0: Checkout to baseline
+
+```
+git checkout b0bb413ec51bce99ef6a90a325df7445cc6336e2
+```
+
 ### Step 1: Build the project itself to get the compile commands
 
 An example to build the project may be:

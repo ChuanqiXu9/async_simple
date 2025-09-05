@@ -37,6 +37,7 @@ else()
     add_definitions(-DASYNC_SIMPLE_HAS_NOT_AIO)
 endif()
 
+message(STATUS "ASYNC_SIMPLE_ENABLE_TESTS: ${ASYNC_SIMPLE_ENABLE_TESTS}")
 if (ASYNC_SIMPLE_ENABLE_TESTS)
     find_package(GTest)
 endif()
